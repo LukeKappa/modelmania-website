@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Model Mania | Premier Hobby Showcase</title>
-  <link rel="icon" href="reference/Logos/Model%20Mania%20Logo.png" type="image/png">
+  <link rel="icon" href="/reference/Logos/Model%20Mania%20Logo.png" type="image/png">
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="Model Mania is Johannesburg, South Africa's premier hobby shop destination, specifically located in Roodepoort. We offer high-performance RC vehicles, precision die-cast models, plastic kits, and expert hobby supplies.">
@@ -347,7 +347,7 @@
             }}>
               <img
                 className="logo-img"
-                src="reference/Logos/Model%20Mania%20Logo.png"
+                src="/reference/Logos/Model%20Mania%20Logo.png"
                 alt="Logo"
                 style={{
                   ...navStyles.logo,
@@ -364,7 +364,7 @@
           <div className="tamiya-logo-container" style={{ display: 'flex', gap: 16 }}>
             <a href="https://www.tamiya.com/english/index.html" target="_blank" rel="noopener noreferrer">
               <img
-                src="reference/Logos/Tamiya%20Logo.png"
+                src="/reference/Logos/Tamiya%20Logo.png"
                 alt="Tamiya"
                 style={{
                   height: 30,
@@ -452,7 +452,7 @@
             marginTop: isCentered ? 40 : 0
           }}>
             <img
-              src="reference/Stock Photos/RC/Octane Brushless.png"
+              src="/reference/Stock Photos/RC/Octane Brushless.png"
               alt="Hero RC"
               className="hero-image"
               style={{
@@ -469,10 +469,10 @@
     function CategoryGrid() {
       const { tweaks } = useTweaks();
       const categories = [
-        { title: 'RC Vehicles', image: 'reference/Stock Photos/RC/Mini Cooper RC.png', items: 'Electric & Nitro, Off-road & Touring' },
-        { title: 'Die-Cast Scale', image: 'reference/Stock Photos/Die Cast/Burago - Porche 911.jpg', items: '1:18, 1:24 Collector series' },
-        { title: 'Plastics & Puzzles', image: 'reference/Stock Photos/Plastics/Tyrrell.png', items: 'Tamiya, Revell, 3D Puzzles' },
-        { title: 'Paints & Tools', image: 'reference/Paints/Tamiya Lacquer Paint.png', items: 'TS, PS, XF series expert finishing' }
+        { title: 'RC Vehicles', image: '/reference/Stock Photos/RC/Mini Cooper RC.png', items: 'Electric & Nitro, Off-road & Touring' },
+        { title: 'Die-Cast Scale', image: '/reference/Stock Photos/Die Cast/Burago - Porche 911.jpg', items: '1:18, 1:24 Collector series' },
+        { title: 'Plastics & Puzzles', image: '/reference/Stock Photos/Plastics/Tyrrell.png', items: 'Tamiya, Revell, 3D Puzzles' },
+        { title: 'Paints & Tools', image: '/reference/Paints/Tamiya Lacquer Paint.png', items: 'TS, PS, XF series expert finishing' }
       ];
 
       const gap = tweaks.density === 'compact' ? 16 : tweaks.density === 'comfortable' ? 32 : 48;
@@ -495,10 +495,10 @@
     function ProductShowcase() {
       const { tweaks } = useTweaks();
       const products = [
-        { name: 'Burago Jaguar E-Type', image: 'reference/Stock Photos/Die Cast/Burago - Jaguar E-Type.jpg', type: 'Die-Cast' },
-        { name: 'Octane Brushed', image: 'reference/Stock Photos/RC/Octane Brussed.png', type: 'RC' },
-        { name: 'Lotus F1', image: 'reference/Stock Photos/Plastics/Lotus.png', type: 'Plastic Kit' },
-        { name: 'Maisto VW Combi', image: 'reference/Stock Photos/Die Cast/Maisto - VW Combi.jpg', type: 'Die-Cast' }
+        { name: 'Burago Jaguar E-Type', image: '/reference/Stock Photos/Die Cast/Burago - Jaguar E-Type.jpg', type: 'Die-Cast' },
+        { name: 'Octane Brushed', image: '/reference/Stock Photos/RC/Octane Brussed.png', type: 'RC' },
+        { name: 'Lotus F1', image: '/reference/Stock Photos/Plastics/Lotus.png', type: 'Plastic Kit' },
+        { name: 'Maisto VW Combi', image: '/reference/Stock Photos/Die Cast/Maisto - VW Combi.jpg', type: 'Die-Cast' }
       ];
 
       return (
@@ -522,14 +522,14 @@
       if (!tweaks.showShopPhotos) return null;
 
       const photos = [
-        'reference/Shop Photos/Puzzle Room 1.png',
-        'reference/Shop Photos/Puzzel Room 2.png',
-        'reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.37.jpeg',
-        'reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.32.jpeg',
-        'reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.33.jpeg',
-        'reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.35.jpeg',
-        'reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.36.jpeg',
-        'reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.30.jpeg'
+        '/reference/Shop Photos/Puzzle Room 1.png',
+        '/reference/Shop Photos/Puzzel Room 2.png',
+        '/reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.37.jpeg',
+        '/reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.32.jpeg',
+        '/reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.33.jpeg',
+        '/reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.35.jpeg',
+        '/reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.36.jpeg',
+        '/reference/Shop Photos/WhatsApp Image 2026-05-06 at 16.28.30.jpeg'
       ];
 
       // Duplicate photos for infinite loop effect
@@ -590,7 +590,7 @@
             marginBottom: 40
           }}>
             <img
-              src="reference/Logos/Model%20Mania%20Logo.png"
+              src="/reference/Logos/Model%20Mania%20Logo.png"
               alt="Logo"
               style={{ height: 60, display: 'block' }}
             />
